@@ -2,7 +2,6 @@ package in.smi.ru.uttamlibrary;
 
 import com.google.firebase.database.Exclude;
 
-
 public class Uttam {
     private String mName;
     private String mImageUrl;
@@ -17,17 +16,9 @@ public class Uttam {
     private String mPrice2;
     private String mKey;
 
-
     public Uttam(){
 
     }
-
-
-
-
-
-
-
 
     public Uttam(String imageUrl, String thumbImageUrl, String brand, String color,
                   String count, String desc, String expiry,
@@ -44,100 +35,55 @@ public class Uttam {
         mName = name;
         mPrice = price;
         mSize = size;
-
-
     }
-
-
     public String getBrand(){
-
         return mBrand;
-
     }
 
     public void setBrand(String brand){
-
         mBrand = brand;
-
     }
-
-
+    
     public String getImageUrl(){
         return mImageUrl;
     }
 
 
     public void setImageUrl(String imageUrl){
-
         mImageUrl= imageUrl;
     }
-
-
     public String getThumbImageUrl(){
         return mThumbImageUrl;
     }
-
-
     public void setThumbImageUrl(String thumbImageUrl){
-
         mThumbImageUrl= thumbImageUrl;
     }
-
-
-
     public String getColor(){
-
         return mColor;
-
     }
-
     public void setColor(String color){
-
         mColor = color;
-
     }
 
     public String getCount(){
-
         return mCount;
-
     }
-
     public void setCount(String count){
-
         mCount = count;
-
     }
-
-
     public String getName(){
-
-        return mName;
+      return mName;
     }
 
     public void setName(String name) {
-
         mName = name;
-
     }
-
-
-
-
     public String getDesc(){
-
         return mDesc;
-
     }
-
     public void setDesc(String desc){
-
         mDesc = desc;
-
     }
-
-
-
     public String getSize(){
 
         return mSize;
@@ -149,13 +95,6 @@ public class Uttam {
         mSize = size;
 
     }
-
-
-
-
-
-
-
 
     public String getPrice(){
 
@@ -169,13 +108,8 @@ public class Uttam {
 
     }
 
-
-
-
     public String getExpiry(){
-
         return mExpiry;
-
     }
 
     public void setExpiry(String expiry){
@@ -183,10 +117,6 @@ public class Uttam {
         mExpiry = expiry;
 
     }
-
-
-
-
     public String getPrice2(){
 
         return mPrice2;
@@ -198,20 +128,6 @@ public class Uttam {
         mPrice2 = price2;
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     @Exclude
     public String getKey() {
