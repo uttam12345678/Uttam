@@ -14,6 +14,7 @@ public class Uttam {
     private String mColor;
     private String mPrice;
     private String mPrice2;
+    private String mTax;
     private String mKey;
 
     public Uttam(){
@@ -21,8 +22,8 @@ public class Uttam {
     }
 
     public Uttam(String imageUrl, String thumbImageUrl, String brand, String color,
-                  String count, String desc, String expiry,
-                  String name, String price,  String size ){
+                 String count, String desc, String expiry,
+                 String name, String price, String tax , String size ){
 
 
         mBrand = brand;
@@ -34,6 +35,7 @@ public class Uttam {
         mExpiry = expiry;
         mName = name;
         mPrice = price;
+        mTax = tax;
         mSize = size;
     }
     public String getBrand(){
@@ -43,7 +45,7 @@ public class Uttam {
     public void setBrand(String brand){
         mBrand = brand;
     }
-    
+
     public String getImageUrl(){
         return mImageUrl;
     }
@@ -72,7 +74,7 @@ public class Uttam {
         mCount = count;
     }
     public String getName(){
-      return mName;
+        return mName;
     }
 
     public void setName(String name) {
@@ -128,6 +130,22 @@ public class Uttam {
         mPrice2 = price2;
 
     }
+
+
+    public String getTax(){
+
+        return mTax;
+
+    }
+
+    public void setTax(String tax){
+
+        mTax = tax;
+
+    }
+
+
+
 
     @Exclude
     public String getKey() {
