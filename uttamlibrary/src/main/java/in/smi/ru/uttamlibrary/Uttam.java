@@ -1,4 +1,6 @@
-package in.smi.ru.uttamlibrary;
+//package com.smi.justbilling.classes;
+
+ package in.smi.ru.uttamlibrary;
 
 import com.google.firebase.database.Exclude;
 
@@ -14,6 +16,7 @@ public class Uttam {
     private String mColor;
     private String mPrice;
     private String mPrice2;
+    private String mPrice3;
     private String mTax;
     private String mKey;
 
@@ -130,6 +133,23 @@ public class Uttam {
         mPrice2 = price2;
 
     }
+
+
+
+    public String getPrice3(){
+
+        return mPrice3;
+
+    }
+
+    public void setPrice3(String price3){
+
+        mPrice3 = price3;
+
+    }
+    
+    
+    
 
 
     public String getTax(){
